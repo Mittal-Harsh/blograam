@@ -1,0 +1,30 @@
+{% extends 'landing/base.html' %} {% block content %}
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-10 col-sm-20 text-center">
+            <!-- <h1 class="display-2">
+                <font color="black">Welcome to </font>
+            </h1> -->
+            <p style="text-align: center">
+                <img src="../../../media/uploads/team/logo2.png" height="250px " width="250px " style="border-radius: 15%; ">
+            </p>
+            <p class="mt-3 lead">
+                <font color="">Publish your passions your way.!</font>
+            </p>
+            <p class="mt-3 lead">
+                <font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Post Blogs, Read Blogs, Follow people who interest you,<br> <b>Go get an account now !</b>
+                </font>
+            </p>
+            <div class="d-flex justify-content-center mt-5">
+                <a href="{% url 'account_login' %}" class="btn px-5 py-2 btn-light" style="margin-right: 5px;">Log
+                    In</a>
+                <a href="{% url 'account_signup' %}" class="btn px-5 py-2 btn-dark" style="margin-left: 5px;">Register</a>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+
+    </div>
+</div>
+{% endblock content %}
